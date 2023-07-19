@@ -1,0 +1,84 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --footer-bg: #f1f1f1;
+  --ifm-menu-color-background-active: rgba(46, 133, 85, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --footer-bg: #212121;
+  --ifm-menu-color-background-active: rgba(46, 133, 85, 0.1);
+}
+
+.menu__list-item-collapsible{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.menu__link:hover, .menu__caret:hover{
+  background-color: unset;
+}
+ul.menu__list > li > a.menu__link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.menu__list > li > a.menu__link--active {
+  border-right: 2px solid var(--ifm-color-primary);
+  border-radius: 0;
+}
+
+nav.menu {
+  padding-right: 0;
+  scrollbar-gutter: auto;
+}
+
+.navbar__link{
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item{
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link--active{
+  color: #fff;
+  background-color: var(--ifm-color-primary);
+  border-radius: 9999px;
+}
+
+
+.navbar__link--active:hover{
+  color: #fff;
+}
