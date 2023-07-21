@@ -82,3 +82,9 @@ nav.menu {
 .navbar__link--active:hover{
   color: #fff;
 }
+
+@media (max-width: 996px){
+  .navbar__item {
+    display: none;
+  }
+}
